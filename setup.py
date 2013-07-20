@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+# coding: utf8
 
 from setuptools import setup, find_packages
 
@@ -15,7 +15,7 @@ requires = ['Sphinx>=1.0']
 
 setup(
     name='sphinxcontrib-httpdomain',
-    version='1.1.9',
+    version='dev',
     url='http://bitbucket.org/birkenfeld/sphinx-contrib',
     download_url='http://pypi.python.org/pypi/sphinxcontrib-httpdomain',
     license='BSD',
