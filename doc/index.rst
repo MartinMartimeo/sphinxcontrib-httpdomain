@@ -203,6 +203,22 @@ nicely:
 ``queryparameter``, ``queryparam``, ``qparam``, ``query``
    Description of parameter passed by request query string.
 
+<<<<<<< HEAD
+=======
+   It optionally can be typed, all the query parameters will have obviously
+   string types though.  But it's useful if there's conventions for it.
+
+   .. versionchanged:: 1.1.9
+
+      It can be typed e.g.:
+
+      .. sourcecode:: rst
+
+         :query string title: the post title
+         :query string body: the post body
+         :query boolean sticky: whether it's sticky or not
+
+>>>>>>> a1e40cdf4f4c4e60245a274ae5efdd72b7ae7980
 ``formparameter``, ``formparam``, ``fparam``, ``form``
    Description of parameter passed by request content body, encoded in
    :mimetype:`application/x-www-form-urlencoded` or
@@ -217,9 +233,15 @@ nicely:
    .. versionchanged:: 1.1.9
 
       It can be typed e.g.:
+<<<<<<< HEAD
       
       .. sourcecode:: rst
          
+=======
+
+      .. sourcecode:: rst
+
+>>>>>>> a1e40cdf4f4c4e60245a274ae5efdd72b7ae7980
          :jsonparam string title: the post title
          :jsonparam string body: the post body
          :jsonparam boolean sticky: whether it's sticky or not
@@ -447,6 +469,14 @@ will be rendered as:
 
          .. _undoc-members: http://sphinx.pocoo.org/ext/autodoc.html#directive-automodule
 
+<<<<<<< HEAD
+=======
+   ``blueprints``
+      Only include specified blueprints in generated references.
+
+      .. versionadded:: 1.1.9
+
+>>>>>>> a1e40cdf4f4c4e60245a274ae5efdd72b7ae7980
    ``undoc-blueprints``
       Excludes specified blueprints from generated references.
 
@@ -577,15 +607,39 @@ __ https://bitbucket.org/birkenfeld/sphinx-contrib
 Changelog
 ---------
 
+<<<<<<< HEAD
 Version 1.1.9
 `````````````
 To be released.
 
+=======
+
+Version 1.2.0
+`````````````
+
+To be released.
+
+- Python 3 support!  [:pull:`34` by murchik]
+
+
+Version 1.1.9
+`````````````
+
+Released on August 8, 2013.
+
+>>>>>>> a1e40cdf4f4c4e60245a274ae5efdd72b7ae7980
 - Now Bottle_ apps can be loaded by :mod:`~sphinxcontrib.autohttp`.
   See :mod:`sphinxcontrib.autohttp.bottle` module.
   [patch_ by Jameel Al-Aziz]
 - Added ``:reqheader:`` and ``:resheader:`` option flags.
 - ``:jsonparameter:`` can be typed.  [:pull:`31` by Chuck Harmston]
+<<<<<<< HEAD
+=======
+- ``:queryparameter:`` can be typed.  [:pull:`37` by Viktor Haag]
+- :rst:dir:`autoflask` and :rst:dir:`autobottle` directives now allow
+  empty ``:endpoints:``, ``:undoc-endpoints:``, and ``:blueprints:``
+  arguments.  [:pull:`33` by Michael Twomey]
+>>>>>>> a1e40cdf4f4c4e60245a274ae5efdd72b7ae7980
 
 .. _patch: https://github.com/jalaziz/sphinxcontrib-httpdomain
 
